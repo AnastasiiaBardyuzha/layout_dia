@@ -99,9 +99,9 @@ h1 {
     width: 100%;
     left: 0; }
 
-.hire__link_activ {
+.hire .hire__link--activ {
   position: relative; }
-  .hire__link_activ:after {
+  .hire .hire__link--activ:after {
     content: "";
     display: block;
     position: absolute;
@@ -179,7 +179,9 @@ h1 {
     .nav__link:hover:after {
       width: 100%;
       left: 0; }
-    .nav__link_activ:after {
+  .nav .nav__link_activ {
+    position: relative; }
+    .nav .nav__link_activ:after {
       content: "";
       display: block;
       position: absolute;
@@ -234,7 +236,11 @@ h1 {
     background-image: url(../images/slider/left-arrow.png);
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 8px; }
+    margin-right: 8px;
+    -webkit-transition: border 300ms linear;
+    transition: border 300ms linear; }
+    .slider__left-arrow:hover {
+      border: rgba(37, 55, 87, 0.7) solid 1px; }
   .slider__right-arrow {
     display: inline-block;
     background-color: #fff;
@@ -244,7 +250,11 @@ h1 {
     cursor: pointer;
     background-image: url(../images/slider/right-arrow.png);
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    -webkit-transition: border 300ms linear;
+    transition: border 300ms linear; }
+    .slider__right-arrow:hover {
+      border: rgba(37, 55, 87, 0.7) solid 1px; }
   .slider__title {
     font-family: poppins, sans-serif;
     font-weight: bold;
@@ -264,6 +274,7 @@ html {
 
 body {
   margin: 0;
+  color: #cecece;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
