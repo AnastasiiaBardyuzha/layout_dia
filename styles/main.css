@@ -44,7 +44,6 @@ h1 {
 .header__text {
   color: #fff;
   font-family: open sans, sans-serif;
-  font-weight: normal;
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 56px;
@@ -72,6 +71,7 @@ h1 {
 
 .hire__link {
   text-decoration: none;
+  outline: none;
   text-transform: uppercase;
   color: #fff;
   font-family: poppins, sans-serif;
@@ -153,6 +153,7 @@ h1 {
       margin-right: 0; }
   .nav__link {
     text-decoration: none;
+    outline: none;
     text-transform: uppercase;
     color: #fff;
     font-family: poppins, sans-serif;
@@ -268,6 +269,33 @@ h1 {
     font-size: 14px;
     line-height: 20px;
     width: 264px; }
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.content__block {
+  padding: 148px 0; }
+
+.content__welcome {
+  margin: auto;
+  display: block;
+  width: 754px; }
+
+.content__head-type1 {
+  font-family: poppins, sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #253757;
+  margin-bottom: 16px; }
+
+.content__text-type1 {
+  font-family: open sans, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #6c788b; }
 
 html {
   scroll-behavior: smooth; }
