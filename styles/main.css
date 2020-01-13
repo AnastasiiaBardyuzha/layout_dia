@@ -307,11 +307,11 @@ h1 {
   line-height: 48px;
   margin-bottom: 16px; }
 
-.content__text-type1 {
-  font-family: open sans, sans-serif;
+.content__text-big {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
+  font-family: open sans, sans-serif;
   color: #6c788b; }
 
 .content__head-big {
@@ -324,6 +324,46 @@ h1 {
   margin-bottom: 16px; }
   .content__head-big-mb {
     margin-bottom: 77px; }
+
+.content__process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.content__process-info {
+  max-width: 362px; }
+
+.content__head-small-upper {
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  color: #253757;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c0cdd7;
+  margin: 0 0 16px; }
+
+.content__process-head {
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  color: #253757;
+  font-size: 32px;
+  line-height: 48px;
+  line-height: 42px;
+  margin: 0 0 24px; }
+
+.content__process-text {
+  font-family: open sans, sans-serif;
+  color: #6c788b;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 21px; }
 
 .grid-block {
   display: grid;
@@ -367,10 +407,10 @@ h1 {
     margin-bottom: 16px; }
   .expertise-card__description {
     font-family: open sans, sans-serif;
+    color: #6c788b;
     font-size: 14px;
     line-height: 21px;
-    text-align: center;
-    color: #6c788b; }
+    text-align: center; }
 
 html {
   scroll-behavior: smooth; }
