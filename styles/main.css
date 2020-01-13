@@ -299,7 +299,7 @@ h1 {
   display: block;
   width: 754px; }
 
-.content__head-type1 {
+.content__head-small {
   font-family: poppins, sans-serif;
   font-weight: 600;
   color: #253757;
@@ -314,7 +314,7 @@ h1 {
   line-height: 36px;
   color: #6c788b; }
 
-.content__head-type2 {
+.content__head-big {
   font-family: poppins, sans-serif;
   font-weight: 600;
   color: #253757;
@@ -322,7 +322,7 @@ h1 {
   line-height: 48px;
   text-align: center;
   margin-bottom: 16px; }
-  .content__head-type2-mb {
+  .content__head-big-mb {
     margin-bottom: 77px; }
 
 .grid-block {
