@@ -17,7 +17,7 @@ h1 {
   border-bottom-left-radius: 200px;
   position: relative; }
 
-.header__top {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +61,8 @@ h1 {
   line-height: 22px;
   font-weight: 600;
   border: none;
+  outline: none;
+  cursor: pointer;
   -webkit-transition: -webkit-box-shadow 300ms linear;
   transition: -webkit-box-shadow 300ms linear;
   transition: box-shadow 300ms linear;
@@ -234,6 +236,7 @@ h1 {
     height: 32px;
     border-radius: 50%;
     cursor: pointer;
+    border: 1px solid;
     background-image: url(../images/slider/left-arrow.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -249,6 +252,7 @@ h1 {
     height: 32px;
     border-radius: 50%;
     cursor: pointer;
+    border: 1px solid;
     background-image: url(../images/slider/right-arrow.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -275,7 +279,11 @@ h1 {
   font-weight: 400; }
 
 .content__block {
-  padding: 148px 0; }
+  padding: 115px 0; }
+
+.content__block-white {
+  background-color: #fff;
+  padding: 90px 0 134px; }
 
 .content__welcome {
   margin: auto;
@@ -284,9 +292,9 @@ h1 {
 
 .content__head-type1 {
   font-family: poppins, sans-serif;
+  font-weight: 600;
   font-size: 32px;
   line-height: 48px;
-  font-weight: 600;
   color: #253757;
   margin-bottom: 16px; }
 
@@ -297,12 +305,30 @@ h1 {
   line-height: 36px;
   color: #6c788b; }
 
+.content__head-type2 {
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 48px;
+  text-align: center;
+  color: #253757;
+  margin-bottom: 16px; }
+  .content__head-type2-mb {
+    margin-bottom: 64px; }
+
+.grid-block {
+  display: grid;
+  grid-template-columns: repeat(264px, 3);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 html {
   scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  color: #cecece;
+  background-color: #f1f8ff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
