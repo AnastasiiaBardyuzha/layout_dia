@@ -528,6 +528,9 @@ h1 {
     transition: -webkit-transform 300ms linear;
     transition: transform 300ms linear;
     transition: transform 300ms linear, -webkit-transform 300ms linear; }
+    .services__button:focus {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
     .services__button:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
@@ -548,7 +551,13 @@ h1 {
     color: #334563;
     font-size: 15px;
     line-height: 22px;
-    padding-bottom: 8px; }
+    padding-bottom: 8px;
+    -webkit-transition: color 200ms linear;
+    transition: color 200ms linear; }
+    .services__link:hover {
+      color: #000; }
+    .services__link:focus {
+      color: #000; }
 
 html {
   scroll-behavior: smooth; }
