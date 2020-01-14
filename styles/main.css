@@ -379,7 +379,7 @@ h1 {
   line-height: 21px;
   margin-bottom: 21px; }
 
-.content__process-divisions {
+.content__process-services {
   max-width: 558px; }
 
 .grid-block {
@@ -440,19 +440,19 @@ h1 {
     line-height: 21px;
     text-align: center; }
 
-.divisions {
+.services {
   display: grid;
   grid-template-columns: repeat(2, 264px);
   grid-gap: 30px;
-  grid-template-areas: ". divisions2" "divisions1 divisions2" "divisions1 divisions4" "divisions3 divisions4" "divisions3 ."; }
+  grid-template-areas: ". services2" "services1 services2" "services1 services4" "services3 services4" "services3 ."; }
   @media screen and (max-width: 960px) {
-    .divisions {
+    .services {
       grid-template-columns: 264px;
-      grid-template-areas: "divisions1" "divisions2" "divisions3" "divisions4";
+      grid-template-areas: "services1" "services2" "services3" "services4";
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
-  .divisions__card {
+  .services__card {
     display: block;
     width: 264px;
     height: 264px;
@@ -461,15 +461,15 @@ h1 {
     border-radius: 24px;
     -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
             box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03); }
-    .divisions__card_1 {
-      grid-area: divisions1; }
-    .divisions__card_2 {
-      grid-area: divisions2; }
-    .divisions__card_3 {
-      grid-area: divisions3; }
-    .divisions__card_4 {
-      grid-area: divisions4; }
-  .divisions__number {
+    .services__card_1 {
+      grid-area: services1; }
+    .services__card_2 {
+      grid-area: services2; }
+    .services__card_3 {
+      grid-area: services3; }
+    .services__card_4 {
+      grid-area: services4; }
+  .services__number {
     font-family: poppins, sans-serif;
     font-weight: 600;
     color: #253757;
@@ -480,26 +480,30 @@ h1 {
     line-height: 25px;
     margin-bottom: 24px;
     text-align: center; }
-    .divisions__number_blue {
+    .services__number_blue {
       color: #56ccf2;
       background-color: #ecf9fe; }
-    .divisions__number_yellow {
+    .services__number_yellow {
       color: #fcc91d;
       background-color: #fefae5; }
-    .divisions__number_green {
+    .services__number_green {
       color: #15d850;
       background-color: #e5fbea; }
-    .divisions__number_red {
+    .services__number_red {
       color: #f36363;
       background-color: #fdeded; }
-  .divisions__list {
+  .services__list-part {
     font-family: open sans, sans-serif;
     color: #6c788b;
     font-weight: 600;
     font-size: 13px;
     line-height: 19px;
     margin-bottom: 32px; }
-  .divisions__jump {
+  .services__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .services__learn-more {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -509,7 +513,7 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .divisions__button {
+  .services__button {
     outline: none;
     cursor: pointer;
     width: 40px;
@@ -519,16 +523,23 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 16px;
-    border: none; }
-    .divisions__button_blue {
+    border: none;
+    -webkit-transition: -webkit-transform 300ms linear;
+    transition: -webkit-transform 300ms linear;
+    transition: transform 300ms linear;
+    transition: transform 300ms linear, -webkit-transform 300ms linear; }
+    .services__button:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+    .services__button_blue {
       background-color: #56ccf2; }
-    .divisions__button_yellow {
+    .services__button_yellow {
       background-color: #fcc91d; }
-    .divisions__button_green {
+    .services__button_green {
       background-color: #15d850; }
-    .divisions__button_red {
+    .services__button_red {
       background-color: #f36363; }
-  .divisions__link {
+  .services__link {
     font-family: poppins, sans-serif;
     font-weight: 600;
     color: #253757;
@@ -536,7 +547,8 @@ h1 {
     outline: none;
     color: #334563;
     font-size: 15px;
-    line-height: 22px; }
+    line-height: 22px;
+    padding-bottom: 8px; }
 
 html {
   scroll-behavior: smooth; }
