@@ -16,6 +16,9 @@ h1 {
   background: #008aff;
   border-bottom-left-radius: 200px;
   position: relative; }
+  @media screen and (max-width: 980px) {
+    .header__background {
+      border-radius: 0; } }
 
 .header__nav {
   display: -webkit-box;
@@ -31,6 +34,9 @@ h1 {
 
 .header__content {
   max-width: 490px; }
+  @media screen and (max-width: 980px) {
+    .header__content {
+      margin: auto; } }
 
 .header__title {
   color: #fff;
@@ -221,6 +227,12 @@ h1 {
   background-size: cover;
   border-top-left-radius: 200px;
   color: #fff; }
+  @media screen and (max-width: 980px) {
+    .slider {
+      width: 100vw;
+      height: 200px;
+      border-radius: 10px 10px 0;
+      bottom: -40px; } }
   .slider__wrapper {
     position: absolute;
     display: -webkit-box;
@@ -235,6 +247,9 @@ h1 {
     width: 364px;
     left: 48px;
     bottom: 66px; }
+    @media screen and (max-width: 980px) {
+      .slider__wrapper {
+        bottom: 8px; } }
   .slider__arrows {
     height: 32px; }
   .slider__left-arrow {
@@ -426,7 +441,7 @@ h1 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 200px 0; }
+  border-radius: 200px 0 0; }
 
 .content__testimonials-head {
   font-family: poppins, sans-serif;
@@ -456,12 +471,12 @@ h1 {
               justify-content: center; } }
   .grid-block_testimonials {
     grid-template-columns: repeat(3, 314px); }
-  @media screen and (max-width: 1040px) {
-    .grid-block {
-      grid-template-columns: 314px;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+    @media screen and (max-width: 1040px) {
+      .grid-block_testimonials {
+        grid-template-columns: 314px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -534,7 +549,8 @@ h1 {
     .services__card_2 {
       grid-area: services2; }
     .services__card_3 {
-      grid-area: services3; }
+      grid-area: services3;
+      z-index: 2; }
     .services__card_4 {
       grid-area: services4; }
   .services__number {
